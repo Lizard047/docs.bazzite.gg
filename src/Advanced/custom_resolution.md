@@ -27,9 +27,9 @@ title: Custom Resolutions
     kscreen-doctor output.<ID>.addCustomMode.<Width>.<Height>.<Refresh>.<Scaling>
     ```
     Replace each of the options with what you want to set. Note that refresh rate is in **mHz** (millihertz), so a **75Hz** refresh rate will correspond to `75000` in `<refresh>`.
-    `<Scaling>` will be either `full` or `reduced` depending on if you want the resolution to be stretched to fullscreen or displayed with **black bars** on the aspect that doesn’t fit when kwin matches resolution and aspect ratio for your screen
+    `<Scaling>` can be `full` or `reduced`. Use `full` to stretch the resolution to fill the screen, or `reduced` to add black bars to preserve the aspect ratio.
     
-    For example, the command for adding a custom resolution of 1920x1080@75Hz for display ID 1 with potentially a **stretched** resolution would be:
+    For example, the command for adding a custom resolution of 1920x1080@75Hz for display ID 1 that will be stretched to fill the screen would be:
     ```bash
     kscreen-doctor output.1.addCustomMode.1920.1080.75000.full
     ```
