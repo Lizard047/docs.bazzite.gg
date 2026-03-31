@@ -120,6 +120,6 @@ If none of the above errors are relevant to your issue, or you still have proble
 8. Identify the 'Ubuntu' or 'Fedora' folder and move it to the trashcan
    ![](../../img/remove_grub_9.png)
 !!! warning 
-    Do not remove any other folders, such as Boot, Dell, HP, or Microsoft, to prevent Windows from booting properly!
+    Do not remove any other folders, such as Boot, Dell, HP, or Microsoft, or Windows may fail to boot properly!
 9.Reboot, and run the installer again. You might want to delete the partitions that were created during the first install attempt.
    ![](../../img/remove_grub_10.png)
