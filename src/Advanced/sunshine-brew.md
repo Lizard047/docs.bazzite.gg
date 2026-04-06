@@ -42,4 +42,4 @@ The guide below will walk you through switching to the Homebrew Sunshine package
 ![Brew Link Fail Preview|800x400](../img/brew-link-fail.png)
 To fix this, make the directory by running `mkdir -p /home/linuxbrew/.linuxbrew/Cellar/xkeyboard-config/2.47/share/xkeyboard-config-2`
 
-If you encounter any other issues, feel free to reach out on the [Bazzite Discord](../../community/)!
+If you encounter any other issues, feel free to reach out on the [Bazzite Discord](/community/)!
