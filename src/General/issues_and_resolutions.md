@@ -243,8 +243,9 @@ ujust enable-supergfxctl
 ```bash
 ujust _toggle-gigabyte-wake-fix
 ```
+<hr>
 
-## Xbox controller over Bluetooth is stuck on a connecting loop and the Xbox button keeps flashing.
+## Xbox controller over Bluetooth is stuck on a connecting loop and the Xbox button keeps flashing
 
 **Issue:** You controller is not on the latest firmware.
 
