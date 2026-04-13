@@ -243,3 +243,9 @@ ujust enable-supergfxctl
 ```bash
 ujust _toggle-gigabyte-wake-fix
 ```
+
+## Xbox controller over Bluetooth is stuck on a connecting loop and the Xbox button keeps flashing.
+
+**Issue:** You controller is not on the latest firmware.
+
+**Resolution:** Easiest solution here is to connect the controller to a windows machine. Download the Xbox Accessories app and update the controller to the latest firmware. After that the controller should connect seamlessly. A more advanced user could spin a windows VM and passthrough the controller to do the firmware update there.
