@@ -5,7 +5,7 @@ title: Guide Généraux
 # Guides Généraux
 
 - [**Dictionnaire et terminologie**](/General/terms.md)
-- [**Comparaison entre Bazzite et Fedora Atomic Desktop**](/General/Fedora_Atomic_Comparison.md)
+- [**Comparaison avec Fedora Atomic Desktop**](/General/Fedora_Atomic_Comparison.md)
 - [**Comparaison avec SteamOS**](/General/SteamOS_Comparison.md)
 - [**Réglages de l'environnement de bureau**](/General/Desktop_Environment_Tweaks.md)
 - [**Configuration d'un VPN**](/General/VPN.md)
