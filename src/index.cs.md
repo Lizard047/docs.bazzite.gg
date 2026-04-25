@@ -45,12 +45,12 @@ hide:
      {style="list-style-type: decimal;"}
   3. [Homebrew][homebrew] nástroje a aplikace pro příkazový řádek.
      {style="list-style-type: decimal;"}
-  4. [Kontejnery][containers] pro přístup k správcům balíčků (`apt`, `dnf` `pacman`, a další), vývojové toolboxy a pro hostování služeb.
+  4. [Kontejnery][containers] pro přístup ke správcům balíčků (`apt`, `dnf` `pacman`, a další), vývojové toolboxy a pro hostování služeb.
      {style="list-style-type: decimal;"}
   5. [AppImage][appimage] přenosné aplikace stažené odkudkoliv z webu.
      {style="list-style-type: decimal;"}
 
-  Existuje také [vrstvení balíčků přes `rpm-ostree`][rpm-ostree], ale [je doporučeno se tomu vyhnout, pakliže je to možné][rpm-ostree_caveats] jelikož vrstvené balíčky můžou rozbít budoucí aktualizace, dokud nejsou odstraněny.
+  Existuje také [vrstvení balíčků přes `rpm-ostree`][rpm-ostree], ale [je doporučeno se tomu vyhnout, pokud je to možné][rpm-ostree_caveats] jelikož vrstvené balíčky můžou rozbít budoucí aktualizace, dokud nejsou odstraněny.
 
 - [:fontawesome-solid-circle-arrow-down: **Aktualizace a Rollback**][updateindex]{ style="font-size: 1.1rem" }
 
