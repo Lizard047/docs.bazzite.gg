@@ -37,10 +37,14 @@ To fix this, manually make the directory for the **Target** that brew is complai
 ```bash
 mkdir -p /home/linuxbrew/.linuxbrew/Cellar/xkeyboard-config/2.47/share/xkeyboard-config-2
 ```
+Running the unlink and linking commands may also fix it:
+```bash
+brew unlink xkeyboard-config; brew link --overwrite xkeyboard-config
+```
 
 ### Is a display connected and turned on? (error 503)
 
-This usually means that the Sunshine executable hasn't been given the proper permissions(SYS_CAP_ADMIN). This can usually be fixed by updating Sunshine through the Bazzite Portal again.
+This usually means that the Sunshine executable hasn't been given the proper permissions (CAP_SYS_ADMIN). This can usually be fixed by updating Sunshine through the Bazzite Portal again.
 !!! info "If you do not want Sunshine to be updated, you can run the postinstall script manually as ```sudo /usr/libexec/sunshine-postinst```"
 
 ### Error: Couldn't import RGB Image: 00003009 (error -1) 
@@ -49,7 +53,7 @@ When checking `systemctl --user status homebrew.sunshine*`, the error `Error: Co
 This is speculated to be some issues related to way Sunshine/CUDA is packaged on homebrew. Possible solutions include:
 
 -    Installing the Beta version of Sunshine.
--    Using XDG Portal Capture and trying different encoders.
+-    Using **XDG Portal Capture** and trying different encoders.
 -    Manually specify the iGPU to use for capture if available.
 -    Using alternative installation methods.
 
@@ -58,17 +62,17 @@ This is speculated to be some issues related to way Sunshine/CUDA is packaged on
 ## Alternative Ways to Install Sunshine
 
 If the homebrew Sunshine package does not work well for you, or if you do not want homebrew packages on your system, you may try to install Sunshine with alternative ways as listed below, albeit with some limitations and downsides:
-!!! warning "Installation of Sunshine via these methods are not officially supported."
+!!! warning "Installation of Sunshine via these methods is not officially supported."
 
 === "Layering from the COPR"
     
     This is similar to the situation when sunshine is/was included in the image.
-    Installing the Sunshine Beta package from the [official Beta COPR](https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/) by running
+    Layering the Sunshine Beta package from the [official Beta COPR](https://copr.fedorainfracloud.org/coprs/lizardbyte/beta/) by running
     ```bash
     sudo dnf5 copr enable lizardbyte/beta
     rpm-ostree install sunshine
     ```
-    This have the following downsides:
+    This has the following downsides:
     
     -    May prevent system updates.
     -    Lack of a stable package.
@@ -78,11 +82,11 @@ If the homebrew Sunshine package does not work well for you, or if you do not wa
 === "Flatpak"
     
     Installing the Sunshine flatpak package from [flathub](https://flathub.org/en/apps/dev.lizardbyte.app.Sunshine).
-    This have the following downsides:
+    This has the following downsides:
     
     -    [Additional installation steps](https://docs.lizardbyte.dev/projects/sunshine/latest/md_docs_2getting__started.html#flatpak) are needed for KMS Capture and may not be maintained after a version upgrade.
     -    KMS Capture may still not work.
-    -    Lack of a beta package with XDG Portal capture and Vulkan encoder, and thus no capture method can be used if KMS Capture does not work.
+    -    Lack of a beta package with **XDG Portal** capture and Vulkan encoder, and thus no capture method can be used if KMS Capture does not work.
     -    The flatpak appears to still be in an experimental state, similar to the homebrew package.
     
-If you encounter any other issues, feel free to reach out on the [Bazzite Discord](/community.md/)!
+If you encounter any other issues, feel free to reach out on the [Bazzite Discord](/community.md)!
